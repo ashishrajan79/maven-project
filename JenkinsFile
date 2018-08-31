@@ -2,8 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'localMaven'
-        org.jenkinsci.plugins.docker.commons.tools.DockerTool 'localDocker'
-    }
+          }
     stages{
         stage('Build'){
             steps{
